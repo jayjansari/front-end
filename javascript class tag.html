@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag class</title>
+</head>
+<body>
+<h1>by use id</h1>
+<button onclick="google(this)" ondblclick="micro(this)" style="height: 40px;width: 100px;">jay</button>
+<script>
+    function google(xyz){
+       xyz.innerHTML='css';
+    }
+    function micro(xyz){
+       xyz.innerHTML='php';
+    }
+</script>
+by class use
+<h1 class="ai">jay</h1>
+<h1 class="ai">vijay</h1>
+<h1 class="ai">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde voluptatem obcaecati laudantium voluptatum saepe odio. Dolor cumque, ad odit consequatur saepe iste, temporibus voluptate, neque aperiam ipsum eius deleniti quibusdam!</h1>
+<script>
+document.getElementsByClassName('ai')[0].style.cssText='color:red';
+document.getElementsByClassName('ai')[1].style.cssText='color:red';
+document.getElementsByClassName('ai')[2].style.cssText='color:blue;background:yellow';
+
+</script>
+<h2 id="kl"></h2>
+<script>
+    const salary=2500;
+    document.getElementById('kl').innerHTML=salary;
+</script>
+
+<h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel sint voluptatibus sed iste accusantium numquam nobis non! Aperiam cumque deleniti, commodi reiciendis veritatis libero recusandae impedit placeat dolor quibusdam minus.</h3>
+<h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel sint voluptatibus sed iste accusantium numquam nobis non! Aperiam cumque deleniti, commodi reiciendis veritatis libero recusandae impedit placeat dolor quibusdam minus.</h3>
+
+
+<script>
+    document.getElementsByTagName('h3')[0].style.cssText='coloe:red;background:pink';
+    document.getElementsByTagName('h3')[1].style.cssText='coloe:red;background:green';
+
+</script>
+</body>
+</html>

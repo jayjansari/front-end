@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyup</title>   
+</head>
+<body>
+
+
+    <button onkeyup="document.getElementById('a1').innerHTML='css'"
+    onkeydown="document.getElementById('a1').innerHTML='html'" >jay</button>
+    <h1 id="a1"></h1>
+    
+    <h1 id="jay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit autem quam ut est, maiores quod perspiciatis ducimus beatae illo itaque voluptates facilis eos dolorem cupiditate, adipisci, rem laboriosam eligendi eum.</h1>
+
+
+    <script>
+    document.getElementById('jay').style.cssText='background:yellow;color:green';
+
+
+    </script>
+
+<h1>by variable use in javascript</h1>
+<button onclick="clickthis(this)" ondblclick="micri(this)"> jay</button>
+<script>
+    function clickthis(xyz){
+        xyz.innerHTML='css';
+    }
+    function micri(xyz){
+        xyz.innerHTML='html';
+    }
+</script>
+
+<h1>by class use in javascript</h1>
+<h1 class="ai">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sint nam odit itaque asperiores illo voluptatibus, optio doloremque ea neque quam excepturi dolore aliquam possimus voluptate, vitae quibusdam nemo iure!</h1>
+
+<h1 class="ai">jay</h1>
+<script>
+    document.getElementsByClassName('ai')[1].style.cssText='color:red;background:black';
+    document.getElementsByClassName('ai')[0].style.cssText='color:red;background:green';
+
+</script>
+
+<h1>by tage use in javascript</h1>
+
+<span>jay</span>
+<span>vijay</span>
+
+<script>
+    document.getElementsByTagName('span')[0].style.cssText='color:blue;background:black;height:50px;width:100px';
+    document.getElementsByTagName('span')[1].style.cssText='color:blue;background:black;height:50px;width:100px';
+    </script>
+<h1>variable use in javascript</h1>
+<h2 id="harsh"></h2>
+<script>
+const salary=10000;
+    document.getElementById('harsh').innerHTML=salary;
+</script>
+
+<p id="hr"></p>
+<script>
+    const account=15000;
+    document.getElementById('hr').innerHTML=account;
+</script>
+<style>
+    ::marker{
+        color:red;
+    }
+</style>
+<ul>
+    <li>jay</li>
+    <li>jay</li>
+
+    <li>jay</li>
+
+    <li>jay</li>
+
+</ol>
+
+<style>
+h1::first-line{
+        font-size: 100px;
+        background-color: peachpuff;
+    }
+</style>
+    
+<h1><span>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Officiis reprehenderit alias, vero enim nemo similique! Voluptate nisi inventore aspernatur, dignissimos vitae ratione aut tenetur consectetur, velit veritatis praesentium, sapiente provident?</h1>
+
+
+</body>
+</html>

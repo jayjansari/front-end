@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+</head>
+<body>
+    <div>
+        <center><h1>form</h1>
+            <form action="">
+             <span>fname</span>
+                <input type="text" required id="a1" onfocus="large()"><br><br>
+            
+                <span>lname</span>
+                <input type="text" required id="a2" onfocus="large()"><br><br>
+            
+                <span>email</span>
+                <input type="email" required id="a3" onfocus="large()"><br><br>
+            
+                <span>pass</span>
+                <input type="password" required id="a4" onfocus="large()"><br><br>
+                <button>submit</button>
+            </center>
+            <script>
+                function large(){
+                    document.getElementById('a1').style.cssText='height:100px;width:100px;background:red;border:5px dotted green'
+                    document.getElementById('a2').style.cssText='height:100px;width:100px;background:black;border:5px dotted green'
+                    document.getElementById('a3').style.cssText='height:100px;width:100px;background:gray;border:5px dotted green'
+               
+                    document.getElementById('a4').style.cssText='height:100px;width:100px;background:pink;border:5px dotted green'
+               
+               
+                }
+
+        
+            </script>
+            <script>
+                console.log(10+50)
+            </script>
+            </form>
+           
+    </div>
+
+</body>
+</html>
